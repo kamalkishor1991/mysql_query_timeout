@@ -15,7 +15,7 @@ And then execute:
 ## Usage
 
 ```ruby
-QueryTimeout.timeout(2, ActiveRecord::Base){|connection|connection.select_all('select sleep(3)')}
+MysqlQueryTimeout.timeout(2, ActiveRecord::Base){|connection|connection.select_all('select sleep(3)')}
 ```
 
 ## Development
